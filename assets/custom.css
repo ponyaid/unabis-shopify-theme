@@ -48,7 +48,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 2rem;
+    padding: 12px 1.5rem;
     border-radius: 0.5rem;
     background-color: #05a402;
     font-family: "Montserrat";
@@ -967,6 +967,12 @@ button {
         justify-content: initial;
         margin-top: initial;
         color: initial;
+    }
+}
+
+@media (min-width: 577px) {
+    .benefit__details>.tag {
+        display: none;
     }
 }
 

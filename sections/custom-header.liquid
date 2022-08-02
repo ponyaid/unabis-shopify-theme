@@ -1,108 +1,113 @@
-    <header class="header">
-        <div class="container-fluid header__container">
-            <div class="header__navbar">
-                <div>
-                    <button class="header__menu-btn">
-                        <img src="../assets/icon-menu.svg" alt="">
-                    </button>
+<header class="header">
+    <div class="container-fluid header__container">
+        <div class="header__navbar">
+            <div>
+                <button class="header__menu-btn">
+                    {{ 'icon-menu.svg' | asset_url | img_tag }}
+                </button>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header__nav-text">Discover by:</li>
+                        <li id="products-drop-link" class="header__nav-item header__nav-item_drop">
+                            <a class="header__nav-link" href="#">Product</a>
+                            <div id="products-mega-menu" class="mega-menu">
+                                <div class="mega-menu__grid">
+                                    <div class="mega-menu__item">
+                                        <div class="mega-menu__product">
+                                            <img src="{{'gummies-bottle.png' | asset_img_url: 'medium'}}" alt="">
+                                        </div>
+                                        <p>CBD Gummies</p>
+                                    </div>
+                                    <div class="mega-menu__item">
+                                        <div class="mega-menu__product">
+                                            <img src="{{'gummies-bottle.png' | asset_img_url: 'medium'}}" alt="">
+                                        </div>
+                                        <p>CBD Gummies</p>
+                                    </div>
+                                    <div class="mega-menu__item">
+                                        <div class="mega-menu__product">
+                                            <img src="{{'gummies-bottle.png' | asset_img_url: 'medium'}}" alt="">
+                                        </div>
+                                        <p>CBD Gummies</p>
+                                    </div>
+                                    <div class="mega-menu__item">
+                                        <div class="mega-menu__product">
+                                            <img src="{{'gummies-bottle.png' | asset_img_url: 'medium'}}" alt="">
+                                        </div>
+                                        <p>CBD Gummies</p>
+                                    </div>
+                                </div>
+                                <a class="mega-menu__more-btn" href="#">See All Products 👉</a>
+                            </div>
+                        </li>
+                        <li id="benefits-drop-link" class="header__nav-item header__nav-item_drop">
+                            <a class="header__nav-link" href="#">Benefit</a>
+                            <div id="benefits-mega-menu" class="mega-menu">
+                                <div class="mega-menu__grid">
+                                    <div class="mega-menu__item">
+                                        <div class="mega-menu__benefit mega-menu__benefit_green">
+                                            <div class="mega-menu__benefit-head">
+                                                <!-- <img src="../assets/icon-react.svg" alt="" width="28" height="28"> -->
+                                                {{ 'icon-react.svg' | asset_url | img_tag }}
+                                                <p>Relax</p>
+                                            </div>
+                                            <div class="mega-menu__benefit-pic">
+                                                <img src="{{'benefit-1.png' | asset_img_url: 'medium'}}" alt="">
+                                            </div>
+                                        </div>
+                                        <p>Relax</p>
+                                    </div>
+                                </div>
+                                <a class="mega-menu__more-btn" href="#">See All Benefits 👉</a>
+                            </div>
+                        </li>
+                        <li id="spectrums-drop-link" class="header__nav-item header__nav-item_drop">
+                            <a class="header__nav-link" href="#">CBD Spectrum</a>
+                            <div id="spectrums-mega-menu" class="mega-menu">
+                                <div class="mega-menu__grid">
+                                    <div class="mega-menu__item">
+                                        <div class="mega-menu__spectrum">
+                                            <div class="mega-menu__spectrum-pic">
+                                                {{ 'icon-full.svg' | asset_url | img_tag }}
+                                            </div>
+                                            <p class="mega-menu__spectrum-title">Broad spectrum</p>
+                                            <p>(CBD + Miror Cannabinoids)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="mega-menu__more-btn" href="#">See All CBD Spectrums 👉</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                {{ 'logo.svg' | asset_url | img_tag }}
+            </div>
+
+            <div>
+                <div class="header__collapse">
                     <nav class="header__nav">
                         <ul>
-                            <li class="header__nav-text">Discover by:</li>
-                            <li id="products-drop-link" class="header__nav-item header__nav-item_drop">
-                                <a class="header__nav-link" href="#">Product</a>
-                                <div id="products-mega-menu" class="mega-menu">
-                                    <div class="mega-menu__grid">
-                                        <div class="mega-menu__item">
-                                            <div class="mega-menu__product">
-                                                <img src="../assets/gummies-bottle.png" alt="">
-                                            </div>
-                                            <p>CBD Gummies</p>
-                                        </div>
-                                        <div class="mega-menu__item">
-                                            <div class="mega-menu__product">
-                                                <img src="../assets/gummies-bottle.png" alt="">
-                                            </div>
-                                            <p>CBD Gummies</p>
-                                        </div>
-                                        <div class="mega-menu__item">
-                                            <div class="mega-menu__product">
-                                                <img src="../assets/gummies-bottle.png" alt="">
-                                            </div>
-                                            <p>CBD Gummies</p>
-                                        </div>
-                                        <div class="mega-menu__item">
-                                            <div class="mega-menu__product">
-                                                <img src="../assets/gummies-bottle.png" alt="">
-                                            </div>
-                                            <p>CBD Gummies</p>
-                                        </div>
-                                    </div>
-                                    <a class="mega-menu__more-btn" href="#">See All Products 👉</a>
-                                </div>
+                            <li><a class="header__nav-link" href="">Rewards</a></li>
+                            <li><a class="header__nav-link" href="">Learn</a></li>
+                            <li><a class="header__nav-link" href="">Log In</a></li>
+                        </ul>
+                        <ul class="header__btn-group">
+                            <li>
+                                {{ 'icon-search.svg' | asset_url | img_tag }}
                             </li>
-                            <li id="benefits-drop-link" class="header__nav-item header__nav-item_drop">
-                                <a class="header__nav-link" href="#">Benefit</a>
-                                <div id="benefits-mega-menu" class="mega-menu">
-                                    <div class="mega-menu__grid">
-                                        <div class="mega-menu__item">
-                                            <div class="mega-menu__benefit mega-menu__benefit_green">
-                                                <div class="mega-menu__benefit-head">
-                                                    <img src="../assets/icon-react.svg" alt="" width="28" height="28">
-                                                    <p>Relax</p>
-                                                </div>
-                                                <div class="mega-menu__benefit-pic">
-                                                    <img src="../assets/benefit-1.png" alt="">
-                                                </div>
-                                            </div>
-                                            <p>Relax</p>
-                                        </div>
-                                    </div>
-                                    <a class="mega-menu__more-btn" href="#">See All Benefits 👉</a>
-                                </div>
-                            </li>
-                            <li id="spectrums-drop-link" class="header__nav-item header__nav-item_drop">
-                                <a class="header__nav-link" href="#">CBD Spectrum</a>
-                                <div id="spectrums-mega-menu" class="mega-menu">
-                                    <div class="mega-menu__grid">
-                                        <div class="mega-menu__item">
-                                            <div class="mega-menu__spectrum">
-                                                <div class="mega-menu__spectrum-pic">
-                                                    <img src="../assets/icon-full.svg" alt="">
-                                                </div>
-                                                <p class="mega-menu__spectrum-title">Broad spectrum</p>
-                                                <p>(CBD + Miror Cannabinoids)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a class="mega-menu__more-btn" href="#">See All CBD Spectrums 👉</a>
-                                </div>
+                            <li>
+                                <a href="{{ routes.cart_url }}">
+                                    {{ 'icon-shop.svg' | asset_url | img_tag }}
+                                </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-
-                <div>
-                    <img src="../assets/logo.svg" alt="logo" class="header__logo" width="140">
-                </div>
-
-                <div>
-                    <div class="header__collapse">
-                        <nav class="header__nav">
-                            <ul>
-                                <li><a class="header__nav-link" href="">Rewards</a></li>
-                                <li><a class="header__nav-link" href="">Learn</a></li>
-                                <li><a class="header__nav-link" href="">Log In</a></li>
-                            </ul>
-                            <ul class="header__btn-group">
-                                <li><img src="../assets/icon-search.svg" alt="search"></li>
-                                <li>
-                                   <a href="{{ routes.cart_url }}"><img src="../assets/icon-shop.svg" alt="shop"></a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
             </div>
         </div>
-        <script src="../assets/index.js"></script>
-    </header>
+    </div>
+    <script src="{{'index.js' | asset_url}}" defer="defer"></script>
+</header>
