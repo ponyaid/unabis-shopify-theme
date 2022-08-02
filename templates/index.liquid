@@ -1,298 +1,100 @@
-
-
 <div>
-        <section class="head">
-            <div class="container head__content">
-                <div class="head__body">
-                    <p class="head__lead">New Flavors Gummies</p>
-                    <h1 class="head__title">The Best CBD Quality</h1>
+    <section class="head">
+        <div class="container head__content">
+            <div class="head__body">
+                <p class="head__lead">New Flavors Gummies</p>
+                <h1 class="head__title">The Best CBD Quality</h1>
+            </div>
+            <div class="head__details">
+                <div>
+                    <button class="btn head__btn">
+                        Shop Now 👉
+                    </button>
+                    <div class="head__payments">
+                        <img src="{{'visa.png' | asset_img_url}}" alt="visa">
+                        <img src="{{'visa.png' | asset_img_url}}" alt="visa">
+                        <img src="{{'visa.png' | asset_img_url}}" alt="visa">
+                        <img src="{{'visa.png' | asset_img_url}}" alt="visa">
+                        <img src="{{'visa.png' | asset_img_url}}" alt="visa">
+                    </div>
                 </div>
-                <div class="head__details">
+
+                <div class="head__trust">
+                    <img src="{{ 'trust.png' | asset_img_url: '268x', 'middle' }}" alt="trustpilot">
+                    <p>Trustscore 4.6 | 10,000+ reviews</p>
+                </div>
+            </div>
+            <div class="head__cover">
+                <img src="{{ 'head.png' | asset_img_url: '650x650' }}" alt="head">
+            </div>
+        </div>
+    </section>
+
+    <section class="icons">
+        <div class="container">
+            <div class="icons__items">
+                <img src="{{'made-usa.png' | asset_img_url }}" alt="made-usa">
+                <img src="{{'iso.png' | asset_img_url }}" alt="made-usa">
+                <img src="{{'made-usa.png' | asset_img_url }}" alt="made-usa">
+                <img src="{{'iso.png' | asset_img_url }}" alt="made-usa">
+                <img src="{{'made-usa.png' | asset_img_url }}" alt="made-usa">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="explore">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title explore__title">Explore the variety of CDB by product type</h2>
+                <p>Choose the best match for your lifestyle and preferences</p>
+            </div>
+            <div class="explore__products">
+                <div class="explore__product">
+                    <img src="{{ 'gummies-bottle.png' | asset_img_url: 'medium'}}" alt="" class="explore__product-pic">
                     <div>
-                        <button class="btn head__btn">
-                            Shop Now 👉
-                        </button>
-                        <div class="head__payments">
-                            <img src="../assets/visa.png" alt="visa">
-                            <img src="../assets/visa.png" alt="visa">
-                            <img src="../assets/visa.png" alt="visa">
-                            <img src="../assets/visa.png" alt="visa">
-                            <img src="../assets/visa.png" alt="visa">
+                        <h3 class="explore__product-title">CBD Gummies</h3>
+                        <div class="explore__product-rate">
+                            <img src="{{'stars.png' | asset_img_url: '85x17'}}" alt="stars">
+                            <span><strong>4.9/5.0</strong> (1700+ Reviews)</span>
                         </div>
-                    </div>
 
-                    <div class="head__trust">
-                        <img src="../assets/trust.png" alt="trustpilot">
-                        <p>Trustscore 4.6 | 10,000+ reviews</p>
-                    </div>
-                </div>
-                <div class="head__cover">
-                    <img src="../assets/head.png" alt="head" width="650" height="650">
-                </div>
-            </div>
-        </section>
-
-        <section class="icons">
-            <div class="container">
-                <div class="icons__items">
-                    <img src="../assets/made-usa.png" alt="made-usa">
-                    <img src="../assets/iso.png" alt="iso">
-                    <img src="../assets/made-usa.png" alt="made-usa">
-                    <img src="../assets/iso.png" alt="iso">
-                    <img src="../assets/made-usa.png" alt="made-usa">
-                </div>
-            </div>
-        </section>
-
-
-        <section class="explore">
-            <div class="container">
-                <div class="section-head">
-                    <h2 class="section-title explore__title">Explore the variety of CDB by product type</h2>
-                    <p>Choose the best match for your lifestyle and preferences</p>
-                </div>
-                <div class="explore__products">
-                    <div class="explore__product">
-                        <img src="../assets/gummies-bottle.png" alt="" class="explore__product-pic">
-                        <div>
-                            <h3 class="explore__product-title">CBD Gummies</h3>
-                            <div class="explore__product-rate">
-                                <img src="../assets/stars.png" alt="stars" width="85" height="17">
-                                <span><strong>4.9/5.0</strong> (1700+ Reviews)</span>
-                            </div>
-
-                            <dl class="explore__product-dl">
-                                <dt><strong>Benefits:</strong></dt>
-                                <dd>
-                                    <div class="tag">
-                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.15771 7.02238L5.33363 8.19829L7.68545 5.55249" stroke="white"
-                                                stroke-width="0.798277" stroke-linecap="round" />
-                                            <path
-                                                d="M0.865723 8.16938V3.35304C0.865723 3.27172 0.931645 3.2058 1.01296 3.2058C2.06074 3.2058 3.07862 2.85655 3.90568 2.21328L5.10872 1.27759C5.2078 1.20052 5.34555 1.19706 5.44838 1.26904L6.90049 2.28552C7.7562 2.88451 8.77544 3.2058 9.81996 3.2058C9.90782 3.2058 9.97905 3.27702 9.97905 3.36489V8.23122C9.97905 9.31582 9.43699 10.3287 8.53454 10.9303L6.44069 12.3262C5.91028 12.6798 5.22193 12.6899 4.68136 12.3521L2.39036 10.9202C1.4419 10.3274 0.865723 9.28784 0.865723 8.16938Z"
-                                                stroke="white" stroke-width="0.798277" stroke-linecap="round" />
-                                            <path
-                                                d="M1.74756 8.18124V4.21048C1.74756 4.13792 1.79575 4.07419 1.86556 4.05442L2.75394 3.80286C3.23717 3.66602 3.69077 3.44061 4.09166 3.13808L5.2753 2.24487L6.85946 3.26772C7.19635 3.48525 7.56365 3.6516 7.94937 3.76133L8.9792 4.05432C9.04892 4.07416 9.09702 4.13784 9.09702 4.21032V8.22866C9.09702 9.04212 8.69047 9.80175 8.01363 10.253L5.97883 11.6095C5.71379 11.7862 5.36985 11.7914 5.09962 11.6227L2.89238 10.2452C2.18027 9.80077 1.74756 9.02065 1.74756 8.18124Z"
-                                                stroke="white" stroke-width="0.399139" stroke-linecap="round" />
-                                            <circle cx="5.37334" cy="7.3045" r="2.24032" stroke="white"
-                                                stroke-width="0.810975" />
-                                        </svg>
-
-                                        Immune Boost
-                                    </div>
-                                    <div class="tag tag_dark">
-                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <mask id="path-1-inside-1_423_12424" fill="white">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M12.738 8.86838C11.8456 9.95526 10.4915 10.6486 8.97546 10.6486C6.28812 10.6486 4.10961 8.47008 4.10961 5.78275C4.10961 3.42357 5.78856 1.45654 8.01678 1.01131C7.6698 0.949811 7.31267 0.917725 6.94803 0.917725C3.58887 0.917725 0.865723 3.64087 0.865723 7.00003C0.865723 10.3592 3.58887 13.0823 6.94803 13.0823C9.65539 13.0823 11.9496 11.3135 12.738 8.86838Z" />
-                                            </mask>
-                                            <path
-                                                d="M12.738 8.86838L13.5098 9.11725L12.1112 8.35376L12.738 8.86838ZM8.01678 1.01131L8.17568 1.80657L8.15832 0.212788L8.01678 1.01131ZM12.1112 8.35376C11.3663 9.26108 10.2385 9.83762 8.97546 9.83762V11.4596C10.7445 11.4596 12.325 10.6494 13.3648 9.38299L12.1112 8.35376ZM8.97546 9.83762C6.73601 9.83762 4.92058 8.02219 4.92058 5.78275H3.29863C3.29863 8.91797 5.84023 11.4596 8.97546 11.4596V9.83762ZM4.92058 5.78275C4.92058 3.8177 6.31919 2.17752 8.17568 1.80657L7.85788 0.21606C5.25792 0.735562 3.29863 3.02945 3.29863 5.78275H4.92058ZM6.94803 1.7287C7.265 1.7287 7.57477 1.75658 7.87523 1.80984L8.15832 0.212788C7.76483 0.143039 7.36033 0.10675 6.94803 0.10675V1.7287ZM1.6767 7.00003C1.6767 4.08876 4.03675 1.7287 6.94803 1.7287V0.10675C3.14098 0.10675 0.0547481 3.19298 0.0547481 7.00003H1.6767ZM6.94803 12.2714C4.03675 12.2714 1.6767 9.91131 1.6767 7.00003H0.0547481C0.0547481 10.8071 3.14098 13.8933 6.94803 13.8933V12.2714ZM11.9662 8.6195C11.2826 10.7394 9.29317 12.2714 6.94803 12.2714V13.8933C10.0176 13.8933 12.6166 11.8875 13.5098 9.11725L11.9662 8.6195Z"
-                                                fill="white" mask="url(#path-1-inside-1_423_12424)" />
-                                        </svg>
-                                        Sleep
-                                    </div>
-                                </dd>
-                                <dt><strong>Spectrum:</strong></dt>
-                                <dd>
-                                    <div class="tag tag_full">
-                                        <svg width="97" height="97" viewBox="0 0 97 97" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M76.0731 48C76.0731 63.5494 63.6835 76.0731 48.5 76.0731C33.3165 76.0731 20.9269 63.5494 20.9269 48C20.9269 32.4506 33.3165 19.9269 48.5 19.9269C63.6835 19.9269 76.0731 32.4506 76.0731 48Z"
-                                                stroke="white" stroke-width="5.85381" />
-                                            <circle cx="48.1571" cy="48.1571" r="43.6042" stroke="white"
-                                                stroke-width="9.10592" />
-                                        </svg>
-
-                                        Full
-                                    </div>
-                                </dd>
-                            </dl>
-
-
-                        </div>
-                        <div>
-                            <p class="explore__product-text">
-                                CBD Gummies are tasty treats with a predefined CBD dosage that allow you to support your
-                                wellness on the go
-                            </p>
-
-                            <button class="btn explore__product-btn">Discover Now 👉</button>
-                        </div>
-                    </div>
-                    <div class="explore__product explore__product_cyan">
-                        <img src="../assets/gummies-bottle.png" alt="" class="explore__product-pic">
-                        <div>
-                            <h3 class="explore__product-title">CBD Gummies</h3>
-                            <div class="explore__product-rate">
-                                <img src="../assets/stars.png" alt="stars" width="85" height="17">
-                                <span><strong>4.9/5.0</strong> (1700+ Reviews)</span>
-                            </div>
-
-                            <dl class="explore__product-dl">
-                                <dt><strong>Benefits:</strong></dt>
-                                <dd></dd>
-                                <dt><strong>Spectrum:</strong></dt>
-                                <dd>
-                                    <span></span>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div>
-                            <p class="explore__product-text">
-                                CBD Gummies are tasty treats with a predefined CBD dosage that allow you to support your
-                                wellness on the go
-                            </p>
-
-                            <button class="btn explore__product-btn">Discover Now 👉</button>
-                        </div>
-                    </div>
-                    <div class="explore__product explore__product_red">
-                        <img src="../assets/gummies-bottle.png" alt="" class="explore__product-pic">
-                        <div>
-                            <h3 class="explore__product-title">CBD Gummies</h3>
-                            <div class="explore__product-rate">
-                                <img src="../assets/stars.png" alt="stars" width="85" height="17">
-                                <span><strong>4.9/5.0</strong> (1700+ Reviews)</span>
-                            </div>
-
-                            <dl class="explore__product-dl">
-                                <dt><strong>Benefits:</strong></dt>
-                                <dd></dd>
-                                <dt><strong>Spectrum:</strong></dt>
-                                <dd>
-                                    <span></span>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div>
-                            <p class="explore__product-text">
-                                CBD Gummies are tasty treats with a predefined CBD dosage that allow you to support your
-                                wellness on the go
-                            </p>
-
-                            <button class="btn explore__product-btn">Discover Now 👉</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section-rate">
-                    <img src="../assets/stars.png" alt="stars" width="126" height="25">
-                    <p><strong>4.8/5.0</strong> Rated Excellent (1000+ Reviews)</p>
-                </div>
-                <button class="btn explore__btn">View all 👉</button>
-            </div>
-        </section>
-
-
-        <section class="benefits">
-            <div class="container benefits__container">
-                <div class="section-head">
-                    <h2 class="section-title benefits__title">Choose CDB products per their benefits</h2>
-                    <p>Choose cdb that will help you deal with your health challenges</p>
-                </div>
-                <div class="benefits__items">
-                    <div class="benefit benefit_blue">
-                        <div class="benefit__head">
-                            <img src="../assets/icon-react.svg" alt="" width="28" height="28">
-                            <p>All benefits</p>
-                        </div>
-                        <div class="benefit__body">
-                            <div class="benefit__cover">
-                                <img src="../assets/benefit-1.png" alt="benefit">
-                            </div>
-                            <div class="benefit__details">
-                                <div class="tag tag_blue">
-                                    <img src="../assets/icon-react.svg" alt="">
-                                    <p>All benefits</p>
-                                </div>
-                                <p class="benefit__title">New to CBD? Start here</p>
-                                <p class="benefit__rate">
-                                    <img src="../assets/stars.png" alt="stars" width="43" height="9">
-                                    <span>4.8/5.0</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefit benefit_green">
-                        <div class="benefit__head">
-                            <img src="../assets/icon-react.svg" alt="" width="28" height="28">
-                            <p>Relax</p>
-                        </div>
-                        <div class="benefit__body">
-                            <div class="benefit__cover">
-                                <img src="../assets/benefit-1.png" alt="benefit">
-                            </div>
-                            <div class="benefit__details">
-                                <p>Improve your overall well-being</p>
-                                <p class="benefit__rate">
-                                    <img src="../assets/stars.png" alt="stars" width="43" height="9">
-                                    <span>4.8/5.0</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section-rate">
-                    <img src="../assets/stars.png" alt="stars" width="126" height="25">
-                    <p><strong>4.8/5.0</strong> Rated Excellent (1000+ Reviews)</p>
-                </div>
-                <button class="btn benefits__btn">View all 👉</button>
-            </div>
-        </section>
-
-        <section class="quiz">
-            <div class="container quiz__container">
-                <div class="quiz__card">
-                    <div class="quiz__card-grid">
-                        <img class="quiz__card-cover" src="../assets/quiz-bg.png" alt="quiz">
-                        <div>
-                            <h3 class="quiz__card-title">Confused about what CBD product is your best match?</h3>
-                            <p>Answer several questions and find out what form of CBD consumption suits you best.</p>
-                        </div>
-                        <button class="btn quiz__card-btn">Take the Quiz 👉</button>
-                    </div>
-                </div>
-
-                <div class="quiz__banner">
-                    <div class="quiz__banner-title">
-                        <p>Join over</p>
-                        <span>350,000</span>
-                    </div>
-                    <p class="quiz__banner-text">people who already live their best lives with Unabis CBD</p>
-                    <img src="../assets/quiz-bn-2.png" alt="quiz" class="quiz__banner-pic" width="324">
-                </div>
-            </div>
-        </section>
-
-        <section class="bestsellers">
-            <div class="container bestsellers__container">
-                <div class="section-head">
-                    <h2 class="section-title">Unabis bestsellers</h2>
-                    <p>
-                        Try out the loved products of our customers.
-                        <br>Thousands of satisfied users can't wrong!
-                    </p>
-                </div>
-                <div class="bestsellers__items">
-                    <div class="bestseller">
-                        <div class="bestseller__head">
-                            <ul class="bestsellers__tags">
-                                <div class="tag tag_relax">
-                                    <svg width="97" height="97" viewBox="0 0 97 97" fill="none"
+                        <dl class="explore__product-dl">
+                            <dt><strong>Benefits:</strong></dt>
+                            <dd>
+                                <div class="tag">
+                                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.15771 7.02238L5.33363 8.19829L7.68545 5.55249" stroke="white"
+                                            stroke-width="0.798277" stroke-linecap="round" />
                                         <path
-                                            d="M76.0731 48C76.0731 63.5494 63.6835 76.0731 48.5 76.0731C33.3165 76.0731 20.9269 63.5494 20.9269 48C20.9269 32.4506 33.3165 19.9269 48.5 19.9269C63.6835 19.9269 76.0731 32.4506 76.0731 48Z"
-                                            stroke="white" stroke-width="5.85381" />
-                                        <circle cx="48.1571" cy="48.1571" r="43.6042" stroke="white"
-                                            stroke-width="9.10592" />
+                                            d="M0.865723 8.16938V3.35304C0.865723 3.27172 0.931645 3.2058 1.01296 3.2058C2.06074 3.2058 3.07862 2.85655 3.90568 2.21328L5.10872 1.27759C5.2078 1.20052 5.34555 1.19706 5.44838 1.26904L6.90049 2.28552C7.7562 2.88451 8.77544 3.2058 9.81996 3.2058C9.90782 3.2058 9.97905 3.27702 9.97905 3.36489V8.23122C9.97905 9.31582 9.43699 10.3287 8.53454 10.9303L6.44069 12.3262C5.91028 12.6798 5.22193 12.6899 4.68136 12.3521L2.39036 10.9202C1.4419 10.3274 0.865723 9.28784 0.865723 8.16938Z"
+                                            stroke="white" stroke-width="0.798277" stroke-linecap="round" />
+                                        <path
+                                            d="M1.74756 8.18124V4.21048C1.74756 4.13792 1.79575 4.07419 1.86556 4.05442L2.75394 3.80286C3.23717 3.66602 3.69077 3.44061 4.09166 3.13808L5.2753 2.24487L6.85946 3.26772C7.19635 3.48525 7.56365 3.6516 7.94937 3.76133L8.9792 4.05432C9.04892 4.07416 9.09702 4.13784 9.09702 4.21032V8.22866C9.09702 9.04212 8.69047 9.80175 8.01363 10.253L5.97883 11.6095C5.71379 11.7862 5.36985 11.7914 5.09962 11.6227L2.89238 10.2452C2.18027 9.80077 1.74756 9.02065 1.74756 8.18124Z"
+                                            stroke="white" stroke-width="0.399139" stroke-linecap="round" />
+                                        <circle cx="5.37334" cy="7.3045" r="2.24032" stroke="white"
+                                            stroke-width="0.810975" />
                                     </svg>
-                                    Relax
+
+                                    Immune Boost
                                 </div>
+                                <div class="tag tag_dark">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="path-1-inside-1_423_12424" fill="white">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.738 8.86838C11.8456 9.95526 10.4915 10.6486 8.97546 10.6486C6.28812 10.6486 4.10961 8.47008 4.10961 5.78275C4.10961 3.42357 5.78856 1.45654 8.01678 1.01131C7.6698 0.949811 7.31267 0.917725 6.94803 0.917725C3.58887 0.917725 0.865723 3.64087 0.865723 7.00003C0.865723 10.3592 3.58887 13.0823 6.94803 13.0823C9.65539 13.0823 11.9496 11.3135 12.738 8.86838Z" />
+                                        </mask>
+                                        <path
+                                            d="M12.738 8.86838L13.5098 9.11725L12.1112 8.35376L12.738 8.86838ZM8.01678 1.01131L8.17568 1.80657L8.15832 0.212788L8.01678 1.01131ZM12.1112 8.35376C11.3663 9.26108 10.2385 9.83762 8.97546 9.83762V11.4596C10.7445 11.4596 12.325 10.6494 13.3648 9.38299L12.1112 8.35376ZM8.97546 9.83762C6.73601 9.83762 4.92058 8.02219 4.92058 5.78275H3.29863C3.29863 8.91797 5.84023 11.4596 8.97546 11.4596V9.83762ZM4.92058 5.78275C4.92058 3.8177 6.31919 2.17752 8.17568 1.80657L7.85788 0.21606C5.25792 0.735562 3.29863 3.02945 3.29863 5.78275H4.92058ZM6.94803 1.7287C7.265 1.7287 7.57477 1.75658 7.87523 1.80984L8.15832 0.212788C7.76483 0.143039 7.36033 0.10675 6.94803 0.10675V1.7287ZM1.6767 7.00003C1.6767 4.08876 4.03675 1.7287 6.94803 1.7287V0.10675C3.14098 0.10675 0.0547481 3.19298 0.0547481 7.00003H1.6767ZM6.94803 12.2714C4.03675 12.2714 1.6767 9.91131 1.6767 7.00003H0.0547481C0.0547481 10.8071 3.14098 13.8933 6.94803 13.8933V12.2714ZM11.9662 8.6195C11.2826 10.7394 9.29317 12.2714 6.94803 12.2714V13.8933C10.0176 13.8933 12.6166 11.8875 13.5098 9.11725L11.9662 8.6195Z"
+                                            fill="white" mask="url(#path-1-inside-1_423_12424)" />
+                                    </svg>
+                                    Sleep
+                                </div>
+                            </dd>
+                            <dt><strong>Spectrum:</strong></dt>
+                            <dd>
                                 <div class="tag tag_full">
                                     <svg width="97" height="97" viewBox="0 0 97 97" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -305,343 +107,538 @@
 
                                     Full
                                 </div>
-                            </ul>
-                            <a class="bestseller__head-more" href="#">Lean More</a>
-                        </div>
-                        <img src="../assets/gummies.png" alt="" class="bestseller__pic">
-                        <p class="bestseller__rate">
-                            <img src="../assets/stars.png" alt="" width="78" height="16">
-                            <span>4.8/5.0</span>
+                            </dd>
+                        </dl>
+
+
+                    </div>
+                    <div>
+                        <p class="explore__product-text">
+                            CBD Gummies are tasty treats with a predefined CBD dosage that allow you to support your
+                            wellness on the go
                         </p>
-                        <h4 class="bestseller__title">CBD Gummies</h4>
-                        <div class="bestseller__radios">
-                            <label class="bestseller__radio">
-                                <input type="radio" name="best-radio" checked>
-                                <span class="bestseller__radio-checkmark"></span>
-                                <div>
-                                    <p>One Time Purchase</p>
-                                    <small>or 4 interest-free payments of $49.95 with</small>
-                                </div>
-                            </label>
-                            <label class="bestseller__radio">
-                                <input type="radio" name="best-radio">
-                                <span class="bestseller__radio-checkmark"></span>
-                                <div>
-                                    <p>Subscribe & SAVE 20%</p>
-                                    <p><small>Free risk cancel any time</small></p>
-                                </div>
-                            </label>
-                        </div>
-                        <div class="bestseller__details">
-                            <p><del>$299.97</del></p>
-                            <p>$199.75</p>
-                            <div class="bestseller__total-save">
-                                <p>Total<br>save</p>
-                                <p>100$</p>
-                            </div>
-                        </div>
-                        <button class="btn bestseller__btn">Add to cart 👉</button>
+
+                        <button class="btn explore__product-btn">Discover Now 👉</button>
                     </div>
                 </div>
-
-                <div class="section-rate">
-                    <img src="../assets/stars.png" alt="stars" width="126" height="25">
-                    <p><strong>4.8/5.0</strong> Rated Excellent (1000+ Reviews)</p>
-                </div>
-                <button class="btn bestsellers__btn">View all 👉</button>
-            </div>
-        </section>
-
-
-        <section class="power">
-            <div class="container power__container">
-                <div class="power__content">
+                <div class="explore__product explore__product_cyan">
+                    <img src="{{'gummies-bottle.png' | asset_img_url: 'medium'}}" alt="" class="explore__product-pic">
                     <div>
-                        <h2 class="section-title power__title">The power of nature in every drop</h2>
-                        <p>Nature and technology multiplied by the desire of people who want to help people, this is our
-                            mission, this is our key to success</p>
+                        <h3 class="explore__product-title">CBD Gummies</h3>
+                        <div class="explore__product-rate">
+                            <img src="{{'stars.png' | asset_img_url}}" alt="stars" width="85" height="17">
+                            <span><strong>4.9/5.0</strong> (1700+ Reviews)</span>
+                        </div>
+
+                        <dl class="explore__product-dl">
+                            <dt><strong>Benefits:</strong></dt>
+                            <dd></dd>
+                            <dt><strong>Spectrum:</strong></dt>
+                            <dd>
+                                <span></span>
+                            </dd>
+                        </dl>
                     </div>
-                    <div class="power__details">
-                        <div>
-                            <svg width="32" height="32" viewBox="0 0 44 44" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="22" cy="22" r="21" stroke="black" stroke-width="2" />
-                                <circle cx="22" cy="22" r="16.25" stroke="black" stroke-width="1.5" />
-                                <circle cx="22" cy="22" r="11.5" stroke="black" />
-                            </svg>
-                            <p class="power__details-title">Full-Spectrum Extracts</p>
-                            <p class="power__details-text">
-                                All the potential benefits of full-spectrum cannabis products are embedded in the best
-                                CBD gummies to help you with achieving a specific health goal and overall health
-                                improvement as well.
+                    <div>
+                        <p class="explore__product-text">
+                            CBD Gummies are tasty treats with a predefined CBD dosage that allow you to support your
+                            wellness on the go
+                        </p>
+
+                        <button class="btn explore__product-btn">Discover Now 👉</button>
+                    </div>
+                </div>
+                <div class="explore__product explore__product_red">
+                    <img src="{{'gummies-bottle.png' | asset_img_url: 'medium'}}" alt="" class="explore__product-pic">
+                    <div>
+                        <h3 class="explore__product-title">CBD Gummies</h3>
+                        <div class="explore__product-rate">
+                            <img src="{{'stars.png' | asset_img_url: '85x17', 'medium'}}" alt="stars">
+                            <span><strong>4.9/5.0</strong> (1700+ Reviews)</span>
+                        </div>
+
+                        <dl class="explore__product-dl">
+                            <dt><strong>Benefits:</strong></dt>
+                            <dd></dd>
+                            <dt><strong>Spectrum:</strong></dt>
+                            <dd>
+                                <span></span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <p class="explore__product-text">
+                            CBD Gummies are tasty treats with a predefined CBD dosage that allow you to support your
+                            wellness on the go
+                        </p>
+
+                        <button class="btn explore__product-btn">Discover Now 👉</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-rate">
+                <img src="{{'stars.png' | asset_img_url: '126x25', 'medium'}}" alt="stars">
+                <p><strong>4.8/5.0</strong> Rated Excellent (1000+ Reviews)</p>
+            </div>
+            <button class="btn explore__btn">View all 👉</button>
+        </div>
+    </section>
+
+
+    <section class="benefits">
+        <div class="container benefits__container">
+            <div class="section-head">
+                <h2 class="section-title benefits__title">Choose CDB products per their benefits</h2>
+                <p>Choose cdb that will help you deal with your health challenges</p>
+            </div>
+            <div class="benefits__items">
+                <div class="benefit benefit_blue">
+                    <div class="benefit__head">
+                        {{ 'icon-react.svg' | asset_url | img_tag }}
+                        <p>All benefits</p>
+                    </div>
+                    <div class="benefit__body">
+                        <div class="benefit__cover">
+                            <img src="{{'benefit-1.png' | asset_img_url: 'medium'}}" alt="benefit">
+                        </div>
+                        <div class="benefit__details">
+                            <div class="tag tag_blue">
+                                {{ 'icon-react.svg' | asset_url | img_tag }}
+                                <p>All benefits</p>
+                            </div>
+                            <p class="benefit__title">New to CBD? Start here</p>
+                            <p class="benefit__rate">
+                                <img src="{{'stars.png' | asset_img_url: '43x9' }}" alt="stars">
+                                <span>4.8/5.0</span>
                             </p>
                         </div>
-                        <div>
-                            <svg width="32" height="32" viewBox="0 0 44 44" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="22" cy="22" r="21" stroke="black" stroke-width="2" />
-                                <circle cx="22" cy="22" r="16.25" stroke="black" stroke-width="1.5" />
-                                <circle cx="22" cy="22" r="11.5" stroke="black" />
-                            </svg>
-                            <p class="power__details-title">Full-Spectrum Extracts</p>
-                            <p class="power__details-text">
-                                All the potential benefits of full-spectrum cannabis products are embedded in the best
-                                CBD gummies to help you with achieving a specific health goal and overall health
-                                improvement as well.
+                    </div>
+                </div>
+                <div class="benefit benefit_green">
+                    <div class="benefit__head">
+                        {% render 'icon-react' %}
+                        <p>Relax</p>
+                    </div>
+                    <div class="benefit__body">
+                        <div class="benefit__cover">
+                            <img src="{{'benefit-1.png' | asset_img_url: 'medium'}}" alt="benefit">
+                        </div>
+                        <div class="benefit__details">
+                            <p>Improve your overall well-being</p>
+                            <p class="benefit__rate">
+                                <img src="{{'stars.png'| asset_img_url: '43x9', 'medium'}}" alt="stars">
+                                <span>4.8/5.0</span>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="support">
-            <div class="container support__container">
-                <div class="support__content">
-                    <div class="support__cover">
-                        <img src="../assets/support.png" alt="support">
-                    </div>
+            <div class="section-rate">
+                <img src="{{'stars.png' | asset_img_url: '126x25', 'medium' }}" alt="stars">
+                <p><strong>4.8/5.0</strong> Rated Excellent (1000+ Reviews)</p>
+            </div>
+            <button class="btn benefits__btn">View all 👉</button>
+        </div>
+    </section>
+
+    <section class="quiz">
+        <div class="container quiz__container">
+            <div class="quiz__card">
+                <div class="quiz__card-grid">
+                    <img class="quiz__card-cover" src="{{'quiz-bg.png' | asset_img_url: 'grande'}}" alt="quiz">
                     <div>
-                        <p class="support__subtitle">support</p>
-                        <h2 class="section-title support__title">Questions? Get in touch with our wellness experts</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                        <div class="support__btn-group">
-                            <button class="btn support__btn">
-                                <img src="../assets/tel.png" alt="tel" width="16" height="16">
-                                Call
-                            </button>
-                            <button class="btn support__btn support__btn_chat">Chat</button>
-                            <button class="btn support__btn support__btn_email">Email</button>
-                        </div>
+                        <h3 class="quiz__card-title">Confused about what CBD product is your best match?</h3>
+                        <p>Answer several questions and find out what form of CBD consumption suits you best.</p>
                     </div>
+                    <button class="btn quiz__card-btn">Take the Quiz 👉</button>
                 </div>
             </div>
-        </section>
 
-        <section class="buyers">
-            <div class="container buyers__container">
-                <div class="buyers__content">
-                    <div>
-                        <h2 class="section-title buyers__title">The finest CBD - The happiest buyers</h2>
-                        <p>Thousands of people have already improved their lives with our products.
-                            Take a look at what they say about unabis cbd products.</p>
-                    </div>
-
-                    <div>
-                        <div class="buyers__trust">
-                            <img src="../assets/trust-white.png" alt="trust">
-                            <p>Trustscore 4.6 | 10,000+ reviews</p>
-                        </div>
-                        <button class="btn">See more products 👉</button>
-                    </div>
-
-                    <div>
-                        <div class="buyers__reviews">
-                            <div class="buyers__review">
-                                <div class="buyers__review-head">
-                                    <img src="../assets/buyer-1.png" alt="buyer" width="48" height="48">
-                                    <div>
-                                        <p><strong>Denzel Draper</strong></p>
-                                        <p>Verified Buyer</p>
-                                    </div>
-                                </div>
-                                <div class="buyers__review-body">
-                                    <p><strong>Helps my insomnia very well</strong></p>
-                                    <img src="../assets/stars.png" alt="stars" width="80" height="16">
-                                    <p>I was looking for effective sleep supplement for so long! Melatonin alone doesnt
-                                        help me at all. But pm cbd oil from unabis works wonders for me! I am very-very
-                                        grateful to you guys!</p>
-                                </div>
-                            </div>
-                            <div class="buyers__review">
-                                <div class="buyers__review-head">
-                                    <img src="../assets/buyer-1.png" alt="buyer" width="48" height="48">
-                                    <div>
-                                        <p><strong>Denzel Draper</strong></p>
-                                        <p>Verified Buyer</p>
-                                    </div>
-                                </div>
-                                <div class="buyers__review-body">
-                                    <p><strong>Helps my insomnia very well</strong></p>
-                                    <img src="../assets/stars.png" alt="stars" width="80" height="16">
-                                    <p>I was looking for effective sleep supplement for so long! Melatonin alone doesnt
-                                        help me at all. But pm cbd oil from unabis works wonders for me! I am very-very
-                                        grateful to you guys!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="quiz__banner">
+                <div class="quiz__banner-title">
+                    <p>Join over</p>
+                    <span>350,000</span>
                 </div>
+                <p class="quiz__banner-text">people who already live their best lives with Unabis CBD</p>
+                <img src="{{'quiz-bn-2.png' | asset_img_url: '324x', 'medium'}}" alt="quiz" class="quiz__banner-pic">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="blog">
-            <div class="container blog__container">
-                <div class="blog__content">
-                    <div>
-                        <div class="section-head blog__head">
-                            <h2 class="section-title">CBD Blog</h2>
-                            <p>Learn about CBD use cases, latest research findings, and valuable tips on
-                                CBD consumption in our blog articles.</p>
-                        </div>
-                        <div class="blog__main">
-                            <img src="../assets/blog-1.png" alt="blog" width="478" height="272">
-                            <h3 class="blog__main-title">How to Beat Anxiety: <br>5 Natural and Easy to Use Tips</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <a class="blog__more-btn" href="#">Read more</a>
-                    </div>
-                    <div>
-                        <div class="blog__items">
-                            <div class="blog__item">
-                                <div class="blog__item-pic">
-                                    <img src="../assets/blog-1.png" alt="">
-                                </div>
-                                <div>
-                                    <div class="tag blog__tag">
-                                        <img src="../assets/icon-boost.svg" alt="boost">
-                                        Immune boost
-                                    </div>
-                                    <p class="blog__item-title">How to Beat Anxiety: 5 Natural and Easy to Use Tips</p>
-                                    <p class="blog__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Vitae, culpa.</p>
-                                </div>
-                            </div>
-                            <div class="blog__item">
-                                <div class="blog__item-pic">
-                                    <img src="../assets/blog-1.png" alt="">
-                                </div>
-                                <div>
-                                    <div class="tag blog__tag">
-                                        <img src="../assets/icon-boost.svg" alt="boost">
-                                        Immune boost
-                                    </div>
-                                    <p class="blog__item-title">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                    <p class="blog__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Natus accusantium qui perferendis doloribus, maxime excepturi!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="bestsellers">
+        <div class="container bestsellers__container">
+            <div class="section-head">
+                <h2 class="section-title">Unabis bestsellers</h2>
+                <p>
+                    Try out the loved products of our customers.
+                    <br>Thousands of satisfied users can't wrong!
+                </p>
             </div>
-        </section>
+            <div class="bestsellers__items">
+                <div class="bestseller">
+                    <div class="bestseller__head">
+                        <ul class="bestsellers__tags">
+                            <div class="tag tag_relax">
+                                <svg width="97" height="97" viewBox="0 0 97 97" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M76.0731 48C76.0731 63.5494 63.6835 76.0731 48.5 76.0731C33.3165 76.0731 20.9269 63.5494 20.9269 48C20.9269 32.4506 33.3165 19.9269 48.5 19.9269C63.6835 19.9269 76.0731 32.4506 76.0731 48Z"
+                                        stroke="white" stroke-width="5.85381" />
+                                    <circle cx="48.1571" cy="48.1571" r="43.6042" stroke="white"
+                                        stroke-width="9.10592" />
+                                </svg>
+                                Relax
+                            </div>
+                            <div class="tag tag_full">
+                                <svg width="97" height="97" viewBox="0 0 97 97" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M76.0731 48C76.0731 63.5494 63.6835 76.0731 48.5 76.0731C33.3165 76.0731 20.9269 63.5494 20.9269 48C20.9269 32.4506 33.3165 19.9269 48.5 19.9269C63.6835 19.9269 76.0731 32.4506 76.0731 48Z"
+                                        stroke="white" stroke-width="5.85381" />
+                                    <circle cx="48.1571" cy="48.1571" r="43.6042" stroke="white"
+                                        stroke-width="9.10592" />
+                                </svg>
 
-        <section class="faq">
-            <div class="container faq__container">
-                <div class="section-head">
-                    <h2 class="section-title">Frequenntly asked questions</h2>
-                    <p>Assuming that numerous questions may arise before you make your first CBD order
-                        in Unabis CBD Store, we provide you with comperehensive answers to the most popular ones.
+                                Full
+                            </div>
+                        </ul>
+                        <a class="bestseller__head-more" href="#">Lean More</a>
+                    </div>
+                    <img src="{{'gummies.png' | asset_img_url: 'medium'}}" alt="" class="bestseller__pic">
+                    <p class="bestseller__rate">
+                        <img src="{{'stars.png' | asset_img_url: '78x16'}}" alt="">
+                        <span>4.8/5.0</span>
                     </p>
+                    <h4 class="bestseller__title">CBD Gummies</h4>
+                    <div class="bestseller__radios">
+                        <label class="bestseller__radio">
+                            <input type="radio" name="best-radio" checked>
+                            <span class="bestseller__radio-checkmark"></span>
+                            <div>
+                                <p>One Time Purchase</p>
+                                <small>or 4 interest-free payments of $49.95 with</small>
+                            </div>
+                        </label>
+                        <label class="bestseller__radio">
+                            <input type="radio" name="best-radio">
+                            <span class="bestseller__radio-checkmark"></span>
+                            <div>
+                                <p>Subscribe & SAVE 20%</p>
+                                <p><small>Free risk cancel any time</small></p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="bestseller__details">
+                        <p><del>$299.97</del></p>
+                        <p>$199.75</p>
+                        <div class="bestseller__total-save">
+                            <p>Total<br>save</p>
+                            <p>100$</p>
+                        </div>
+                    </div>
+                    <button class="btn bestseller__btn">Add to cart 👉</button>
+                </div>
+            </div>
+
+            <div class="section-rate">
+                <img src="{{'stars.png' | asset_img_url: '126x25', 'medium'}}" alt="stars">
+                <p><strong>4.8/5.0</strong> Rated Excellent (1000+ Reviews)</p>
+            </div>
+            <button class="btn bestsellers__btn">View all 👉</button>
+        </div>
+    </section>
+
+
+    <section class="power">
+        <div class="container power__container">
+            <div class="power__content">
+                <div>
+                    <h2 class="section-title power__title">The power of nature in every drop</h2>
+                    <p>Nature and technology multiplied by the desire of people who want to help people, this is our
+                        mission, this is our key to success</p>
+                </div>
+                <div class="power__details">
+                    <div>
+                        <svg width="32" height="32" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22" cy="22" r="21" stroke="black" stroke-width="2" />
+                            <circle cx="22" cy="22" r="16.25" stroke="black" stroke-width="1.5" />
+                            <circle cx="22" cy="22" r="11.5" stroke="black" />
+                        </svg>
+                        <p class="power__details-title">Full-Spectrum Extracts</p>
+                        <p class="power__details-text">
+                            All the potential benefits of full-spectrum cannabis products are embedded in the best
+                            CBD gummies to help you with achieving a specific health goal and overall health
+                            improvement as well.
+                        </p>
+                    </div>
+                    <div>
+                        <svg width="32" height="32" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22" cy="22" r="21" stroke="black" stroke-width="2" />
+                            <circle cx="22" cy="22" r="16.25" stroke="black" stroke-width="1.5" />
+                            <circle cx="22" cy="22" r="11.5" stroke="black" />
+                        </svg>
+                        <p class="power__details-title">Full-Spectrum Extracts</p>
+                        <p class="power__details-text">
+                            All the potential benefits of full-spectrum cannabis products are embedded in the best
+                            CBD gummies to help you with achieving a specific health goal and overall health
+                            improvement as well.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="container support__container">
+            <div class="support__content">
+                <div class="support__cover">
+                    <img src="{{'support.png' | asset_img_url: 'large'}}" alt="support">
+                </div>
+                <div>
+                    <p class="support__subtitle">support</p>
+                    <h2 class="section-title support__title">Questions? Get in touch with our wellness experts</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <div class="support__btn-group">
+                        <button class="btn support__btn">
+                            <img src="{{'tel.png' | asset_img_url: '16x16'}}" alt="tel">
+                            Call
+                        </button>
+                        <button class="btn support__btn support__btn_chat">Chat</button>
+                        <button class="btn support__btn support__btn_email">Email</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="buyers">
+        <div class="container buyers__container">
+            <div class="buyers__content">
+                <div>
+                    <h2 class="section-title buyers__title">The finest CBD - The happiest buyers</h2>
+                    <p>Thousands of people have already improved their lives with our products.
+                        Take a look at what they say about unabis cbd products.</p>
                 </div>
 
-                <div class="faq__questions">
-                    <div class="faq__question">
-                        <p class="faq__question-title">Does Unabis provide free shipping?</p>
+                <div>
+                    <div class="buyers__trust">
+                        <img src="{{'trust-white.png' | asset_img_url: '320x'}}" alt="trust">
+                        <p>Trustscore 4.6 | 10,000+ reviews</p>
                     </div>
-                    <div class="faq__question">
-                        <p class="faq__question-title">How much time does the delivery take?</p>
-                    </div>
-                    <div class="faq__question">
-                        <p class="faq__question-title">How does Unabis ship CBD orders?</p>
-                    </div>
-                    <div class="faq__question">
-                        <p class="faq__question-title">Does Unabis ship to all the states within the USA?</p>
-                    </div>
-                    <div class="faq__question">
-                        <p class="faq__question-title">How can I track my order?</p>
+                    <button class="btn">See more products 👉</button>
+                </div>
+
+                <div>
+                    <div class="buyers__reviews">
+                        <div class="buyers__review">
+                            <div class="buyers__review-head">
+                                <img src="{{'buyer-1.png' | asset_img_url: '48x48'}}" alt="buyer">
+                                <div>
+                                    <p><strong>Denzel Draper</strong></p>
+                                    <p>Verified Buyer</p>
+                                </div>
+                            </div>
+                            <div class="buyers__review-body">
+                                <p><strong>Helps my insomnia very well</strong></p>
+                                <img src="{{'stars.png' | asset_img_url: '80x16', 'medium'}}" alt="stars">
+                                <p>I was looking for effective sleep supplement for so long! Melatonin alone doesnt
+                                    help me at all. But pm cbd oil from unabis works wonders for me! I am very-very
+                                    grateful to you guys!</p>
+                            </div>
+                        </div>
+                        <div class="buyers__review">
+                            <div class="buyers__review-head">
+                                <img src="{{'buyer-1.png'| asset_img_url: '48x48'}}" alt="buyer">
+                                <div>
+                                    <p><strong>Denzel Draper</strong></p>
+                                    <p>Verified Buyer</p>
+                                </div>
+                            </div>
+                            <div class="buyers__review-body">
+                                <p><strong>Helps my insomnia very well</strong></p>
+                                <img src="{{'stars.png' | asset_img_url: '80x16', 'medium'}}" alt="stars">
+                                <p>I was looking for effective sleep supplement for so long! Melatonin alone doesnt
+                                    help me at all. But pm cbd oil from unabis works wonders for me! I am very-very
+                                    grateful to you guys!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="btn faq__btn">View all 👉</button>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container blog__container">
+            <div class="blog__content">
+                <div>
+                    <div class="section-head blog__head">
+                        <h2 class="section-title">CBD Blog</h2>
+                        <p>Learn about CBD use cases, latest research findings, and valuable tips on
+                            CBD consumption in our blog articles.</p>
+                    </div>
+                    <div class="blog__main">
+                        <img src="{{'blog-1.png' | asset_img_url: '478x272', 'medium'}}" alt="blog">
+                        <h3 class="blog__main-title">How to Beat Anxiety: <br>5 Natural and Easy to Use Tips</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <a class="blog__more-btn" href="#">Read more</a>
+                </div>
+                <div>
+                    <div class="blog__items">
+                        <div class="blog__item">
+                            <div class="blog__item-pic">
+                                <img src="{{'blog-1.png' | asset_img_url: 'medium'}}" alt="">
+                            </div>
+                            <div>
+                                <div class="tag blog__tag">
+                                    {% render 'icon-boost' %}
+                                    Immune boost
+                                </div>
+                                <p class="blog__item-title">How to Beat Anxiety: 5 Natural and Easy to Use Tips</p>
+                                <p class="blog__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Vitae, culpa.</p>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item-pic">
+                                <img src="{{'blog-1.png' | asset_img_url: 'medium'}}" alt="">
+                            </div>
+                            <div>
+                                <div class="tag blog__tag">
+                                    {% render 'icon-boost' %}
+                                    Immune boost
+                                </div>
+                                <p class="blog__item-title">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p class="blog__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Natus accusantium qui perferendis doloribus, maxime excepturi!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container faq__container">
+            <div class="section-head">
+                <h2 class="section-title">Frequenntly asked questions</h2>
+                <p>Assuming that numerous questions may arise before you make your first CBD order
+                    in Unabis CBD Store, we provide you with comperehensive answers to the most popular ones.
+                </p>
+            </div>
+
+            <div class="faq__questions">
+                <div class="faq__question">
+                    <p class="faq__question-title">Does Unabis provide free shipping?</p>
+                </div>
+                <div class="faq__question">
+                    <p class="faq__question-title">How much time does the delivery take?</p>
+                </div>
+                <div class="faq__question">
+                    <p class="faq__question-title">How does Unabis ship CBD orders?</p>
+                </div>
+                <div class="faq__question">
+                    <p class="faq__question-title">Does Unabis ship to all the states within the USA?</p>
+                </div>
+                <div class="faq__question">
+                    <p class="faq__question-title">How can I track my order?</p>
+                </div>
+            </div>
+            <button class="btn faq__btn">View all 👉</button>
+        </div>
+    </section>
 </div>
 
 
 {% comment %} {
-  "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
+"sections": {
+"image_banner": {
+"type": "image-banner",
+"blocks": {
+"heading": {
+"type": "heading",
+"settings": {
+"heading": "Image banner",
+"heading_size": "h0"
+}
+},
+"text": {
+"type": "text",
+"settings": {
+"text": "Give customers details about the banner image(s) or content on the template.",
+"text_style": "body"
+}
+},
+"button": {
+"type": "buttons",
+"settings": {
+"button_label_1": "Shop all",
+"button_link_1": "shopify://collections/all",
+"button_style_secondary_1": true,
+"button_label_2": "",
+"button_link_2": "",
+"button_style_secondary_2": false
+}
+}
+},
+"block_order": [
+"heading",
+"text",
+"button"
+],
+"settings": {
+"image_overlay_opacity": 40,
+"image_height": "large",
+"adapt_height_first_image": false,
+"desktop_content_position": "bottom-center",
+"show_text_box": false,
+"desktop_content_alignment": "center",
+"color_scheme": "background-1",
+"mobile_content_alignment": "center",
+"stack_images_on_mobile": false,
+"show_text_below": false
+}
+},
+"rich_text": {
+"type": "rich-text",
+"blocks": {
+"heading": {
+"type": "heading",
+"settings": {
+"heading": "<p>Talk about your brand</p>",
+"heading_size": "h1"
+}
+},
+"text": {
+"type": "text",
+"settings": {
+"text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome
+    customers to your store.<\ /p>"
         }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand</p>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
         }
-      },
-      "block_order": [
+        },
+        "block_order": [
         "heading",
         "text"
-      ],
-      "settings": {
+        ],
+        "settings": {
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
+        }
+        },
+        "featured_collection": {
+        "type": "featured-collection",
+        "settings": {
         "title": "Featured products",
         "heading_size": "h2",
         "collection": "all",
@@ -657,37 +654,37 @@
         "columns_mobile": "2",
         "padding_top": 28,
         "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
+        }
+        },
+        "collage": {
+        "type": "collage",
+        "blocks": {
         "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
+        "type": "collection",
+        "settings": {
+        "collection": ""
+        }
         },
         "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
+        "type": "product",
+        "settings": {
+        "product": "",
+        "second_image": false
+        }
         },
         "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
+        "type": "collection",
+        "settings": {
+        "collection": ""
         }
-      },
-      "block_order": [
+        }
+        },
+        "block_order": [
         "collection-0",
         "product",
         "collection-1"
-      ],
-      "settings": {
+        ],
+        "settings": {
         "heading": "Multimedia collage",
         "heading_size": "h2",
         "desktop_layout": "left",
@@ -695,11 +692,11 @@
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
+        }
+        },
+        "video": {
+        "type": "video",
+        "settings": {
         "heading": "",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "heading_size": "h1",
@@ -708,68 +705,71 @@
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
         }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    }
-  },
-  "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
-  ]
-} {% endcomment %}
+        },
+        "multicolumn": {
+        "type": "multicolumn",
+        "blocks": {
+        "column1": {
+        "type": "column",
+        "settings": {
+        "title": "Column",
+        "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on
+            availability, style, or even provide a review.<\ /p>",
+                "link_label": "",
+                "link": ""
+                }
+                },
+                "column2": {
+                "type": "column",
+                "settings": {
+                "title": "Column",
+                "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add
+                    details on availability, style, or even provide a review.<\ /p>",
+                        "link_label": "",
+                        "link": ""
+                        }
+                        },
+                        "column3": {
+                        "type": "column",
+                        "settings": {
+                        "title": "Column",
+                        "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.
+                            Add details on availability, style, or even provide a review.<\ /p>",
+                                "link_label": "",
+                                "link": ""
+                                }
+                                }
+                                },
+                                "block_order": [
+                                "column1",
+                                "column2",
+                                "column3"
+                                ],
+                                "settings": {
+                                "title": "",
+                                "heading_size": "h1",
+                                "image_width": "third",
+                                "image_ratio": "adapt",
+                                "columns_desktop": 3,
+                                "column_alignment": "center",
+                                "background_style": "none",
+                                "button_label": "",
+                                "button_link": "",
+                                "swipe_on_mobile": false,
+                                "color_scheme": "background-1",
+                                "columns_mobile": "1",
+                                "padding_top": 36,
+                                "padding_bottom": 36
+                                }
+                                }
+                                },
+                                "order": [
+                                "image_banner",
+                                "rich_text",
+                                "featured_collection",
+                                "collage",
+                                "video",
+                                "multicolumn"
+                                ]
+                                } {% endcomment %}
