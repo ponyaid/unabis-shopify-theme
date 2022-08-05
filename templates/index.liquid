@@ -51,7 +51,9 @@
             </div>
             <div class="variety__items">
                 <div class="variety__item">
-                    <img class="variety__item-cover" src="{{'variety-1.png' | asset_img_url: 'large'}}" alt="">
+                    <div class="variety__item-cover">
+                        <img src="{{'variety-1.png' | asset_img_url: 'large'}}" alt="">
+                    </div>
                     <div class="variety__item-body">
                         <h4 class="variety__item-title">Shop by product</h4>
                         <p>Choose a product for yourself according to the benefits of using</p>
@@ -61,6 +63,9 @@
                 </div>
 
                 <div class="variety__item variety__item_green">
+                    <div class="variety__item-cover">
+                        <img src="{{'variety-2.png' | asset_img_url: 'large'}}" alt="">
+                    </div>
                     <div class="variety__item-body">
                         <h4 class="variety__item-title">Shop by product</h4>
                         <p>Choose a product for yourself according to the benefits of using</p>
@@ -305,7 +310,7 @@
             <div class="quiz__card">
                 <div class="quiz__card-grid">
                     <img class="quiz__card-cover" src="{{'quiz-bg.png' | asset_img_url: 'grande'}}" alt="quiz">
-                    <div>
+                    <div class="quiz__card-body">
                         <h3 class="quiz__card-title">Confused about what CBD product is your best match?</h3>
                         <p>Answer several questions and find out what form of CBD consumption suits you best.</p>
                     </div>
@@ -526,15 +531,73 @@
         </div>
     </section>
 
+    <section class="subscribe">
+        <div class="container subscribe__container">
+            <div class="subscribe__grid">
+                <div>
+                    <div class="subscribe__form">
+                        <h3 class="subscribe__title">Up to<br>20% Off</h3>
+                        <p>Subscribe to our newsletter and get generous monthly discount offers, product updates and
+                            valuable insights on how to get the most out of CBD.</p>
+                        <div class="subscribe__input-group">
+                            <input type="email" placeholder="Type your email here">
+                            <button class="btn"><span>Subscribe&nbsp;</span>👉</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="subscribe__benefits">
+                        <li class="subscribe__benefit">
+                            <span class="subscribe__benefit-icon">
+                                {{ 'icon-guarantee.svg' | asset_url | img_tag }}
+                            </span>
+                            <div>
+                                <p><strong>Money back 30 day</strong></p>
+                                <p>Either you're satisfied, or we will give your money back.</p>
+                            </div>
+                        </li>
+                        <li class="subscribe__benefit">
+                            <span class="subscribe__benefit-icon">
+                                {{ 'icon-support.svg' | asset_url | img_tag }}
+                            </span>
+                            <div>
+                                <p><strong>Premium support</strong></p>
+                                <p>We’re always there to help you make an informed decision.</p>
+                            </div>
+                        </li>
+                        <li class="subscribe__benefit">
+                            <span class="subscribe__benefit-icon">
+                                {{ 'icon-people.svg' | asset_url | img_tag }}
+                            </span>
+                            <div>
+                                <p><strong>Loved by 10 000+ users</strong></p>
+                                <p>Thousands of people have already made their lives better with our CBD.</p>
+                            </div>
+                        </li>
+                        <li class="subscribe__benefit">
+                            <span class="subscribe__benefit-icon">
+                                {{ 'icon-people.svg' | asset_url | img_tag }}
+                            </span>
+                            <div>
+                                <p><strong>SSL</strong></p>
+                                <p>Thousands of people have already made their lives better with our CBD.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="blog">
         <div class="container blog__container">
             <div class="blog__content">
+                <div class="section-head blog__head">
+                    <h2 class="section-title">CBD Blog</h2>
+                    <p>Learn about CBD use cases, latest research findings, and valuable tips on
+                        CBD consumption in our blog articles.</p>
+                </div>
                 <div>
-                    <div class="section-head blog__head">
-                        <h2 class="section-title">CBD Blog</h2>
-                        <p>Learn about CBD use cases, latest research findings, and valuable tips on
-                            CBD consumption in our blog articles.</p>
-                    </div>
                     <div class="blog__main">
                         <img src="{{'blog-1.png' | asset_img_url: '478x272', 'medium'}}" alt="blog">
                         <h3 class="blog__main-title">How to Beat Anxiety: <br>5 Natural and Easy to Use Tips</h3>
@@ -543,36 +606,34 @@
                     </div>
                     <a class="blog__more-btn" href="#">Read more</a>
                 </div>
-                <div>
-                    <div class="blog__items">
-                        <div class="blog__item">
-                            <div class="blog__item-pic">
-                                <img src="{{'blog-1.png' | asset_img_url: 'medium'}}" alt="">
-                            </div>
-                            <div>
-                                <div class="tag blog__tag">
-                                    {% render 'icon-boost' %}
-                                    Immune boost
-                                </div>
-                                <p class="blog__item-title">How to Beat Anxiety: 5 Natural and Easy to Use Tips</p>
-                                <p class="blog__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Vitae, culpa.</p>
-                            </div>
+                <div class="blog__items">
+                    <div class="blog__item">
+                        <div class="blog__item-pic">
+                            <img src="{{'blog-1.png' | asset_img_url: 'medium'}}" alt="">
                         </div>
-                        <div class="blog__item">
-                            <div class="blog__item-pic">
-                                <img src="{{'blog-1.png' | asset_img_url: 'medium'}}" alt="">
+                        <div>
+                            <div class="tag blog__tag">
+                                {% render 'icon-boost' %}
+                                Immune boost
                             </div>
-                            <div>
-                                <div class="tag blog__tag">
-                                    {% render 'icon-boost' %}
-                                    Immune boost
-                                </div>
-                                <p class="blog__item-title">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <p class="blog__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Natus accusantium qui perferendis doloribus, maxime excepturi!</p>
+                            <p class="blog__item-title">How to Beat Anxiety: 5 Natural and Easy to Use Tips</p>
+                            <p class="blog__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Vitae, culpa.</p>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__item-pic">
+                            <img src="{{'blog-1.png' | asset_img_url: 'medium'}}" alt="">
+                        </div>
+                        <div>
+                            <div class="tag blog__tag">
+                                {% render 'icon-boost' %}
+                                Immune boost
                             </div>
+                            <p class="blog__item-title">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p class="blog__item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Natus accusantium qui perferendis doloribus, maxime excepturi!</p>
                         </div>
                     </div>
                 </div>
