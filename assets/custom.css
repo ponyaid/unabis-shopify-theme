@@ -38,6 +38,13 @@ p {
 button {
   cursor: pointer; }
 
+[class^="icon-"],
+[class*=" icon-"] {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  fill: currentColor; }
+
 .btn {
   display: flex;
   align-items: center;
@@ -50,14 +57,10 @@ button {
   font-weight: 700;
   line-height: 1.2;
   color: #fff; }
-  .btn svg,
-  .btn img,
-  .btn object {
-    width: 1rem;
-    height: 1rem;
-    min-width: 1rem;
-    object-fit: contain;
-    object-position: center;
+  .btn [class^="icon-"],
+  .btn [class*=" icon-"] {
+    height: 1.5rem;
+    width: 1.5rem;
     margin-right: 0.5rem; }
 
 .tag {
@@ -82,6 +85,10 @@ button {
     min-width: 1rem;
     object-fit: contain;
     object-position: center; }
+  .tag [class^="icon-"],
+  .tag [class*=" icon-"] {
+    width: 1rem;
+    height: 1rem; }
   .tag_dark {
     background-color: #00397a; }
   .tag_full {
@@ -603,7 +610,7 @@ button {
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
     @media (max-width: 992px) {
       .benefits__items {
         margin-bottom: 2rem;
@@ -1512,6 +1519,10 @@ button {
   list-style: none;
   display: flex;
   gap: 20px; }
+  .footer__social [class^="icon-"] {
+    height: 2rem;
+    width: 2rem;
+    fill: currentColor; }
 .footer__payments {
   gap: 20px;
   display: flex;
