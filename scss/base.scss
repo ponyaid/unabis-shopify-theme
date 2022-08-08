@@ -1,0 +1,56 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+a,
+label {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: none;
+    color: #13262d;
+}
+
+ol,
+ul,
+dl,
+p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    fill: currentColor;
+}
+
+@import "style";
+@import "mega-menu";

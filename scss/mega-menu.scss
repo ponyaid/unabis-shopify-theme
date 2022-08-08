@@ -1,0 +1,127 @@
+.mega-menu {
+    top: calc(100% - 0.5rem);
+    opacity: 0;
+    visibility: hidden;
+    left: 60px;
+    right: 60px;
+    position: absolute;
+    background-color: #fff;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: opacity 0.3s ease-out;
+
+    &_active {
+        opacity: 1;
+        visibility: inherit;
+    }
+
+    &__grid {
+        width: 100%;
+        display: flex;
+        padding: 20px calc((100% - 1134px) / 2);
+        justify-content: space-around;
+        border-bottom: 1px solid #ebeff0;
+    }
+
+    &__item {
+        text-align: center;
+
+        & > * {
+            margin-top: 12px;
+        }
+    }
+
+    &__more-btn {
+        display: block;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 54px;
+        text-align: center;
+        color: #04a9bc;
+    }
+
+    &__product {
+        width: 196px;
+        height: 164px;
+        padding: 1.5rem;
+        background-color: #f7d39d;
+        border-radius: 12px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__benefit-head {
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    &__benefit_green &__benefit-head {
+        background-color: #00c2ae;
+    }
+
+    &__benefit-pic {
+        margin-top: 0.5rem;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 12px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__spectrum {
+        width: 170px;
+        min-height: 215px;
+        padding: 20px;
+        border-radius: 12px;
+        background-color: #00aab8;
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    &__spectrum-pic {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 12px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__spectrum-title {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+    }
+}
